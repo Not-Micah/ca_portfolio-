@@ -8,9 +8,17 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        title: ['Montserrat'], 
+        accent: ['"Libre Baskerville"'], 
+      },
+      colors: {},
+      maxWidth: {
+        'max': '1300px',
+      },
+      spacing: {
+        'default': '48px',
+        'tight': '18px',
       },
     },
   },

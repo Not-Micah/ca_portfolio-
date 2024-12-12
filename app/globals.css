@@ -1,21 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .dynamic-heading {
+    @apply text-5xl max-lg:text-4xl max-md:text-3xl uppercase font-bold
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .dynamic-text {
+    @apply text-lg max-lg:text-base
+  }
+
+  .padding {
+    @apply px-default max-lg:px-tight
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
