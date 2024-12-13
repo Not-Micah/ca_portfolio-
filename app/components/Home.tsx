@@ -5,8 +5,8 @@ const Home = () => {
     <section 
     className='
     max-w-max w-full mx-auto
-    max-h-[100vh]
-    mt-[250px]
+    max-h-[100vh] overflow-y-scroll no-scrollbar
+    mt-[50px] max-lg:mb-[100px]
 
     flex flex-col gap-y-6
     padding'>

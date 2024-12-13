@@ -5,8 +5,8 @@ const NavBar = () => {
     <nav
     className='
     flex justify-between items-center
-    max-w-max w-full
-    fixed top-[50px] left-1/2 transform -translate-x-1/2
+    max-w-max w-full mx-auto
+    my-[100px]
     padding py-2'>
 
         <a 

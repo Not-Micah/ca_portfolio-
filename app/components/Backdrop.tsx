@@ -23,17 +23,17 @@ const Backdrop = () => {
         <div
         className='
         w-[750px] h-[300px]
-        rounded-full
-        bg-red-200/20
+        bg-red-200/60
+        max-lg:opacity-50
         blur-[150px]
         
-        absolute top-[50px] left-[50px]
+        absolute -top-[100px] -left-[150px]
         ' />
 
         <div
         className='
         w-[700px] h-[350px]
-        rounded-full
+        max-lg:opacity-50
         bg-yellow-200/20
         blur-[150px]
         
@@ -43,28 +43,29 @@ const Backdrop = () => {
         <div
         className='
         w-[500px] h-[500px]
-        rounded-full
-        bg-pink-400/10
+        max-lg:opacity-50
+        bg-pink-400/20
         blur-[150px]
         
-        absolute top-[50px] right-[100px]
+        absolute -top-[50px] -right-[25px]
         ' />
 
         <div
         className='
         w-[400px] h-[400px]
-        rounded-full
+        max-lg:opacity-50
         bg-blue-500/10
         blur-[150px]
+
         
-        absolute bottom-[50px] right-[50px]
+        absolute -bottom-[50px] -right-[50px]
         ' />
 
         <h3
         className='
         absolute -bottom-[35px] -left-[20px]
-        text-8xl font-accent opacity-20'>
-          MT. DEV
+        text-8xl font-accent uppercase opacity-20'>
+          Mt. Dev
         </h3>
 
     </div>
