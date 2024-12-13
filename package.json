@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mezh-hq/react-gridlines": "^1.0.1",
+    "@radix-ui/react-dialog": "^1.1.3",
     "@react-hook/mouse-position": "^4.1.3",
     "framer-motion": "^11.14.0",
     "next": "15.1.0",

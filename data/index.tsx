@@ -1,3 +1,14 @@
+export interface CardProps {
+    card: {
+      title?: string;
+      description?: string;
+      img?: string;
+      tools?: string[];
+      mainUrl?: string;
+      githubUrl?: string;
+    };
+  }
+
 export const navLinks = [
     {
         label: "About",
@@ -44,7 +55,7 @@ export const projects = [
         title: "Me2",
         description: "Developed a student chat app that matches users based on shared interests. Features include private chats, global chatrooms, and study groups. Managed data with Firebase.",
         img: "./me2.png",
-        tools: [],
+        tools: ["TypeScript", "React", "Firebase"],
         mainUrl: "",
         githubUrl: ""
     },
