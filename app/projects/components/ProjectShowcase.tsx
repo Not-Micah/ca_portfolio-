@@ -1,6 +1,7 @@
 "use client";
 
 import useProjectModal from "@/hooks/useProjectModal";
+import ArrowText from "@/app/components/ArrowText";
 
 import { projects, CardProps } from "@/data";
 
@@ -125,6 +126,13 @@ const ProjectShowcase = () => {
           <Card key={index} card={project} />
         ))}
       </div>
+
+      <ArrowText 
+      text="Any Many More Scripts" 
+      link="https://github.com/Not-Micah" 
+      className="mt-2" 
+      />
+
     </section>
   );
 };

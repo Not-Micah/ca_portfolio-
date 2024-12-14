@@ -1,0 +1,12 @@
+.arrow-animate {
+    animation: arrow-move 1.0s infinite ease-in-out;
+}
+
+@keyframes arrow-move {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}

@@ -1,3 +1,5 @@
+import ArrowText from "./ArrowText"
+
 import { socialLinks } from "@/data"
 
 const Home = () => {
@@ -36,13 +38,8 @@ const Home = () => {
       the rhythm of Pop Music & Jazz, losing myself in the captivating 
       flow of melodies. anyways you can Contact Me
       </p>
-
-      <a 
-      href=""
-      className='
-      dynamic-text mt-8'>
-        See More About Me
-      </a>
+      
+      <ArrowText text="See More About Me" link="./about" className="mt-8" />
 
       <div 
       className='
