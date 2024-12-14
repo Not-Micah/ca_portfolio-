@@ -30,7 +30,8 @@ const Card: React.FC<CardProps> = ({ card }) => {
         className="
         w-full h-full
         bg-gradient-to-b from-[#00000000] to-[#00000000] group-hover:to-black/60
-        absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2
+        max-lg:to-black/60"
       >
         <div
           className="
@@ -39,18 +40,18 @@ const Card: React.FC<CardProps> = ({ card }) => {
           p-4
           transform translate-y-[20px] opacity-0
           group-hover:translate-y-0 group-hover:opacity-100
-          transition-all duration-300"
+          transition-all duration-300
+          max-lg:translate-y-0 max-lg:opacity-100"
         >
           <h3
-            className="dynamic-text font-semibold text-white text-left
-          bg-black/50 p-1"
+            className="dynamic-text font-semibold text-white text-left"
           >
             {card.title}
           </h3>
 
           <p
-            className="dynamic-text text-white text-left
-          bg-black/50 p-1" 
+            className="dynamic-text text-white/80 text-left
+            max-lg:hidden" 
           >
             {card.description}
           </p>
@@ -97,14 +98,16 @@ const ProjectShowcase = () => {
         "
       >
         {/* Odd Projects */}
-        <div className="flex flex-col gap-y-6 lg:w-1/2">
+        <div className="flex flex-col gap-y-6 lg:w-1/2
+        max-lg:hidden">
           {oddProjects.map((project, index) => (
             <Card key={index} card={project} />
           ))}
         </div>
 
         {/* Even Projects */}
-        <div className="flex flex-col gap-y-6 lg:w-1/2">
+        <div className="flex flex-col gap-y-6 lg:w-1/2
+        max-lg:hidden">
           {evenProjects.map((project, index) => (
             <Card key={index} card={project} />
           ))}

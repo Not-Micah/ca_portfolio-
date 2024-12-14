@@ -16,8 +16,9 @@ const ProjectModal = () => {
     <div
       className={twMerge(
         `w-[100vw] h-[100vh] 
-        fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2`,
-        isOpen ? "bg-black/25 z-10" : "pointer-events-none"
+        fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2
+        z-10`,
+        isOpen ? "bg-black/25" : "pointer-events-none"
       )}
     >
       <div
