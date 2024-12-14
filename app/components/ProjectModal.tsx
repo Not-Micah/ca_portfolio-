@@ -64,7 +64,7 @@ const ProjectModal = () => {
         </div>
 
         {card?.card.mainUrl && (
-          <div className="mt-4">
+          <div className="mt-4 overflow-x-hidden">
             <h3 className={twMerge(sharedHeaderStyles, sharedIconHeaderStyles)}>
               <FaGlobeAsia className="text-black/50" /> Website Link
             </h3>
@@ -75,7 +75,7 @@ const ProjectModal = () => {
         )}
 
         {card?.card.githubUrl && (
-          <div className="mt-4">
+          <div className="mt-4 overflow-x-hidden">
             <h3 className={twMerge(sharedHeaderStyles, sharedIconHeaderStyles)}>
               <FaGithub className="text-black/50" /> GitHub Link
             </h3>
