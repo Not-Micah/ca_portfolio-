@@ -51,6 +51,60 @@ export const socialLinks = [
     },
 ];
 
+import { FaPaintBrush, FaGamepad, FaMobile, FaUserGraduate, FaGlobeAsia, FaClipboard } from "react-icons/fa";
+
+export const experiences = [
+    {
+        title: "Graphic Designer",
+        icon: <FaPaintBrush size={15} />,
+        date: "2019-2022",
+        description: (
+            <p>During the pandemic, I grew my <a className="underline" href="https://www.youtube.com/@micah27">Minecraft YouTube channel</a> to a peak of 2.2k subscribers by creating and posting over 40 videos. I designed custom thumbnails for each video, mastering graphic design techniques using <a className="underline" href="https://www.getpaint.net/">Paint.net</a>.</p>
+        )
+    },
+    {
+        title: "Game Developer",
+        icon: <FaGamepad size={15} />,
+        date: "2022",
+        description: (
+            <p>During the summer of my freshman year, I completed a Python course from <a className="underline" href="https://codewithmosh.com/">Code with Mosh</a>, where I gained a strong foundation in key programming concepts, including object-oriented programming. I applied this knowledge to develop my first project, <a className="underline" href="./projects">'The Impossible Platformer,'</a> a Mario-style game with various unique features, using Pygame and Python.</p>
+        )
+    },
+    {
+        title: "Mobile App Developer",
+        icon: <FaMobile size={15} />,
+        date: "2022-2023",
+        description: (
+            <p>Following my experience in game development, I transitioned into mobile app development. Utilizing Python and libraries like Kivy and KivyMD, I published four applications on the Google Play Store under <a className="underline" href="./projects">'The Simple Work Series,'</a> a collection of productivity apps. I also explored other programming languages, including Kotlin, to broaden my development expertise.</p>
+        )
+    },
+    {
+        title: "A-Level Computer Science Student",
+        icon: <FaUserGraduate size={15} />,
+        date: "2023-Present",
+        description: (
+            <p>After completing my IGCSEs and exploring programming independently, I chose Computer Science as one of my A-Level subjects. My dedication led to achieving the <a className="underline" href="./blogs">highest mark in Indonesia for the AS-Level</a>. I am currently completing my A-Levels, which include Mathematics and Physics, further enhancing my analytical and technical skills.</p>
+        )
+    },
+    {
+        title: "Web Developer",
+        icon: <FaGlobeAsia size={15} />,
+        date: "2023-Present",
+        description: (
+            <p>While I enjoyed game and mobile app development, I discovered a stronger passion for web development. Starting with basic HTML and CSS, I quickly advanced to mastering modern technologies, including React, Next.js, Tailwind CSS, and Firebase/MongoDB. I have collaborated on <a className="underline" href="./projects">various projects</a>, led development teams, and completed internships, and I am currently working on new personal projects.</p>
+        )
+    },
+    {
+        title: "Currently Learning",
+        icon: <FaClipboard size={15} />,
+        date: "2024-Present",
+        description: (
+            <p>With a growing passion for Computer Science, I am currently exploring new domains, including machine learning, to further enhance my knowledge and skill set.</p>
+        )
+    },
+];
+
+
 export const projects = [
     {
         index: 0,

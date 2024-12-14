@@ -89,7 +89,7 @@ const ProjectShowcase = () => {
         padding
       "
     >
-      <h3 className="dynamic-heading font-title">Projects</h3>
+      <h3 className="dynamic-heading font-title mb-5">Projects</h3>
 
       <div
         className="
