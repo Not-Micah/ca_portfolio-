@@ -18,7 +18,7 @@ const ArrowText: React.FC<ArrowTextProps> = ({ text, link, className }) => {
 
           <a 
           href='/about'
-          className="dynamic-text text-black/80 group-hover:underline">
+          className="dynamic-text group-hover:underline">
             {text}
           </a>
 
