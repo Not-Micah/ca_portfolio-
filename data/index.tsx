@@ -13,15 +13,15 @@ export interface CardProps {
 export const navLinks = [
     {
         label: "About",
-        link: "/about"
+        href: "/about"
     },
     {
         label: "Projects",
-        link: "/projects"
+        href: "/projects"
     },
     {
         label: "Blog",
-        link: "/blog"
+        href: "/blog"
     }
 ];
 
@@ -31,23 +31,23 @@ import { BiLogoGmail } from "react-icons/bi";
 export const socialLinks = [
     {
         icon: <FaLinkedin size={25} />,
-        link: ""
+        href: ""
     },
     {
         icon: <BiLogoGmail size={25} />,
-        link: ""
+        href: ""
     },
     {
         icon: <FaDiscord size={25} />,
-        link: ""
+        href: ""
     },
     {
         icon: <FaInstagram size={25} />,
-        link: ""
+        href: ""
     },
     {
         icon: <FaGithub size={25} />,
-        link: ""
+        href: ""
     },
 ];
 

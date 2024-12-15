@@ -32,8 +32,8 @@ const Home = () => {
       className='
       dynamic-text'>
       Bona fide photochromic Lens enthusiast - sunlight or indoors, 
-      I've got it covered. I tread the path of minimalism, finding 
-      beauty in simplicity and order. When I'm not crafting beautiful 
+      I&apos;ve got it covered. I tread the path of minimalism, finding 
+      beauty in simplicity and order. When I&apos;m not crafting beautiful 
       web experiences, you can find me reading Articles or swaying to 
       the rhythm of Pop Music & Jazz, losing myself in the captivating 
       flow of melodies. anyways you can Contact Me
@@ -47,7 +47,7 @@ const Home = () => {
         {socialLinks.map((social, index) => (
           <a
           key={index}
-          href={social.link}
+          href={social.href}
           className="mt-4">
             {social.icon}
           </a>

@@ -3,8 +3,11 @@
 import { navLinks } from "@/data";
 import { RxHamburgerMenu } from "react-icons/rx";
 
+import Link from "next/link";
 import { useState } from "react";
 import { MouseEventHandler } from "react";
+
+import TransitionLink from "./TransitionLink";
 
 interface NavBarModalProps {
   isOpen: boolean;
@@ -35,12 +38,12 @@ const NavBarModal: React.FC<NavBarModalProps> = ({ isOpen, onClose }) => {
       <div className="flex flex-col gap-y-8">
         {navLinks.map((link, index) => (
           <div key={index} className="flex flex-col gap-y-2">
-            <a
+            <TransitionLink
               className="text-xl font-bold uppercase text-black/80"
-              href={link.link}
+              href={link.href}
             >
               {link.label}
-            </a>
+            </TransitionLink>
             <div className="w-full h-[1px] bg-black/80" />
           </div>
         ))}
@@ -60,18 +63,18 @@ const NavBar = () => {
     mt-[75px] mb-[100px]
     padding py-2"
     >
-      <a href="/" className="w-[50px] h-[50px]">
+      <TransitionLink href="/" className="w-[50px] h-[50px]">
         <img src="./logo.png" className="w-full h-full object-cover" />
-      </a>
+      </TransitionLink>
 
       <div
         className="
         flex items-center gap-x-6 max-lg:hidden"
       >
         {navLinks.map((link, index) => (
-          <a
+          <TransitionLink
             key={index}
-            href={link.link}
+            href={link.href}
             className="
             relative group
             dynamic-text"
@@ -84,7 +87,7 @@ const NavBar = () => {
                 transition-all duration-300
                 "
             />
-          </a>
+          </TransitionLink>
         ))}
       </div>
 
