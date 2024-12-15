@@ -3,7 +3,6 @@
 import { navLinks } from "@/data";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import Link from "next/link";
 import { useState } from "react";
 import { MouseEventHandler } from "react";
 

@@ -4,8 +4,6 @@ import Link from "next/link";
 import { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 
-import { twMerge } from "tailwind-merge";
-
 const sleep = (ms: number) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
 };
