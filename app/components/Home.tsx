@@ -39,7 +39,7 @@ const Home = () => {
       flow of melodies. anyways you can Contact Me
       </p>
       
-      <ArrowText text="See More About Me" link="./about" className="mt-8" />
+      <ArrowText text="See More About Me" link="/about" className="mt-8" />
 
       <div 
       className='

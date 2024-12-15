@@ -1,9 +1,11 @@
 import { twMerge } from 'tailwind-merge';
 import './arrow-text.css'; 
 
+import TransitionLink from './TransitionLink';
+
 interface ArrowTextProps {
     text: string;
-    link?: string;
+    link: string;
     className?: string;
 }
 
@@ -16,11 +18,11 @@ const ArrowText: React.FC<ArrowTextProps> = ({ text, link, className }) => {
           group`, className)
         }>
 
-          <a 
-          href='/about'
+          <TransitionLink 
+          href={link}
           className="dynamic-text group-hover:underline">
             {text}
-          </a>
+          </TransitionLink>
 
           <svg 
           className='arrow-animate'
