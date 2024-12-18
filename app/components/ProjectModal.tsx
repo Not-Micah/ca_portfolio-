@@ -51,7 +51,7 @@ const ProjectModal = () => {
 
         <div className="mt-2">
           <h3 className={sharedHeaderStyles}>Technologies</h3>
-          <div className="flex items-center gap-x-4 flex-wrap mt-2">
+          <div className="flex items-center gap-2 flex-wrap mt-2">
             {card?.card.tools?.map((item, index) => (
               <div
                 key={index}
