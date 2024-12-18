@@ -1,4 +1,4 @@
-const Blogs = () => {
+const Archive = () => {
 
   return (
     <section 
@@ -20,4 +20,4 @@ const Blogs = () => {
   )
 }
 
-export default Blogs
+export default Archive

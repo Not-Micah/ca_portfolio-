@@ -21,7 +21,7 @@ export const navLinks = [
     },
     {
         label: "Blog",
-        href: "/blog"
+        href: "/blogs"
     }
 ];
 
