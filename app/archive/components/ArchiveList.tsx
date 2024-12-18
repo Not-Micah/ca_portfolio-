@@ -3,7 +3,9 @@
 import { archive } from "@/data";
 import { useSearchParams, useRouter } from "next/navigation";
 
-const ArchiveList = () => {
+import { Suspense } from "react";
+
+const ArchiveListContent = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -65,5 +67,13 @@ const ArchiveList = () => {
     </section>
   );
 };
+
+const ArchiveList = () => {
+    return (
+        <Suspense>
+            <ArchiveListContent />
+        </Suspense>
+    )
+}
 
 export default ArchiveList;
