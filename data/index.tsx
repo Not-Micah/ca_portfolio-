@@ -20,8 +20,8 @@ export const navLinks = [
         href: "/projects"
     },
     {
-        label: "Blog",
-        href: "/blogs"
+        label: "Archive",
+        href: "/archive"
     }
 ];
 
@@ -205,4 +205,118 @@ export const projects = [
         mainUrl: "https://drive.google.com/file/d/1ZMYd_0RLmwQZFd4AQv71bPHDsaOYxLjP/view",
         githubUrl: ""
     },
+];
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+type ArchiveFile = {
+    type: "file";
+    title: string;
+    file: string;
+  };
+  
+type ArchiveFolder = {
+type: "folder";
+title: string;
+items: ArchiveItem[]; 
+};
+
+type ArchiveItem = ArchiveFolder | ArchiveFile;
+  
+export const archive: ArchiveItem[] = [
+{
+    type: "folder",
+    title: "Academics",
+    items: [
+    {
+        type: "folder",
+        title: "Grades",
+        items: [
+        { type: "file", title: "IGCSE Grades", file: "" },
+        { type: "file", title: "AS-Level Grades", file: "" },
+        ],
+    },
+    {
+        type: "folder",
+        title: "Honors",
+        items: [
+        {
+            type: "file",
+            title: "Highest Mark in Indonesia for IGCSE Global Perspectives",
+            file: "",
+        },
+        {
+            type: "file",
+            title: "Highest Mark in Indonesia for AS-Level Computer Science",
+            file: "",
+        },
+        ],
+    },
+    ],
+},
+{
+    type: "folder",
+    title: "Extracurriculars",
+    items: [
+    {
+        type: "folder",
+        title: "Inventions",
+        items: [
+        { type: "file", title: "STEM Club's Maurice's Machine", file: "" },
+        { type: "file", title: "Robotic's Club Mars Rover", file: "" },
+        ],
+    },
+    {
+        type: "folder",
+        title: "Organized Events",
+        items: [
+        { type: "file", title: "SES Prom 2023", file: "" },
+        { type: "file", title: "SES Fun Day 2024", file: "" },
+        { type: "file", title: "SES Science Fair 2024", file: "" },
+        { type: "file", title: "SES Science Fair 2025", file: "" },
+        ],
+    },
+    {
+        type: "folder",
+        title: "Awards",
+        items: [
+        {
+            type: "folder",
+            title: "Computer Science",
+            items: [
+            { type: "file", title: "Python Course Completion", file: "" },
+            { type: "file", title: "HTML & CSS Course Completion", file: "" },
+            { type: "file", title: "NodeJS Course Completion", file: "" },
+            {
+                type: "file",
+                title: "Restoring Rainbows Internship Certificate",
+                file: "",
+            },
+            {
+                type: "file",
+                title: "Hearts for Hope Internship Certificate",
+                file: "",
+            },
+            ],
+        },
+        {
+            type: "folder",
+            title: "Competitive Mathematics",
+            items: [
+            { type: "file", title: "UKMT Bronze Award", file: "" },
+            { type: "file", title: "AMO Bronze Award", file: "" },
+            { type: "file", title: "MMWC Gold Award", file: "" },
+            ],
+        },
+        {
+            type: "folder",
+            title: "Swimming",
+            items: [{ type: "file", title: "Rocca Swim Meet", file: "" }],
+        },
+        { type: "file", title: "IAYP Bronze", file: "" },
+        ],
+    },
+    ],
+},
 ];

@@ -22,10 +22,10 @@ const TransitionLink: React.FC<TransitionLinkProps> = ({ children, href, classNa
 
         const body = document.querySelector("body");
         body?.classList.add("page-transition");         // Add the transition class!
-        await sleep(400);                               // Allow the transition to take place!
+        await sleep(500);                               // Allow the transition to take place!
 
         router.push(href);                              // Update the URL :)
-        await sleep(250);                               // Allow the new URL to load in!
+        await sleep(350);                               // Allow the new URL to load in!
         body?.classList.remove("page-transition");      // Remove the transition class!
     };
 
