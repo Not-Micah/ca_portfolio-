@@ -77,9 +77,10 @@ const ArchiveListContent = () => {
 
   const handleFileClick = (file: string) => {
     if (file) {
-      window.open(file, "_blank");
+      window.open(file, "_blank"); // Open the file directly as provided in item.file
     }
   };
+  
 
   return (
     <section className="max-w-max w-full mx-auto mt-[50px] mb-[120px] flex flex-col gap-y-6 padding">
