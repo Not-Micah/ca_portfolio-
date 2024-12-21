@@ -31,23 +31,23 @@ import { BiLogoGmail } from "react-icons/bi";
 export const socialLinks = [
     {
         icon: <FaLinkedin size={25} />,
-        href: ""
+        href: "https://www.linkedin.com/in/micah-tidball-a1b28231b/"
     },
     {
         icon: <BiLogoGmail size={25} />,
-        href: ""
+        href: "mailto:tidball.code@gmail.com"
     },
     {
         icon: <FaDiscord size={25} />,
-        href: ""
+        href: "https://discord.gg/RsX9EYacmM"
     },
     {
         icon: <FaInstagram size={25} />,
-        href: ""
+        href: "https://www.instagram.com/micahtid/"
     },
     {
         icon: <FaGithub size={25} />,
-        href: ""
+        href: "https://github.com/Not-Micah"
     },
 ];
 
