@@ -120,7 +120,7 @@ export const projects = [
         title: "Verbum",
         description: "Created a Bible verse filtering tool with over 300 verses stored in MongoDB. Users can filter by author or book, view book summaries, and use an AI chatbot powered by the Gemini API.",
         img: "./verbum.png",
-        tools: ["TypeScript", "React", "TailwindCSS", "MongoDB"],
+        tools: ["TypeScript", "React", "TailwindCSS", "MongoDB", "GeminiAPI"],
         mainUrl: "https://verbum-beta.vercel.app/",
         githubUrl: "https://github.com/Not-Micah/verbum"
     },
@@ -162,6 +162,15 @@ export const projects = [
     },
     {
         index: 6,
+        title: "Je Ne Sais Pas",
+        description: "Created a web platform for IGCSE 0520 French writing, offering AI-driven feedback on translation errors to enhance language skills.",
+        img: "./je_ne_sais_pas.png",
+        tools: ["TypeScript", "React", "TailwindCSS", "GeminiAPI"],
+        mainUrl: "https://je-ne-sais-pas.vercel.app/",
+        githubUrl: "https://github.com/Not-Micah/je-ne-sais-pas"
+    },
+    {
+        index: 7,
         title: "Simple Work Series",
         description: "Published four mobile apps on the Play Store: a to-do list, pomodoro timer, habit tracker, and daily quote generator (discontinued). The apps were built using Python, Kivy/KivyMD, and packaged with Buildozer, achieving over 500 downloads.",
         img: "./simple_work_series.png",
@@ -170,7 +179,7 @@ export const projects = [
         githubUrl: ""
     },
     {
-        index: 7,
+        index: 8,
         title: "The Impossible Platformer",
         description: "Created a platformer game inspired by Mario using Pygame. Levels are generated from data in Excel sheets using Openpyxl. Published on Itch.io.",
         img: "./the_impossible_platformer.png",
@@ -179,7 +188,7 @@ export const projects = [
         githubUrl: "https://github.com/Not-Micah/platformer"
     },
     {
-        index: 8,
+        index: 9,
         title: "Micah Builds",
         description: "The previous iteration of my portfolio, built with React, TailwindCSS, and Next.js. A minimalist design showcasing my work and skills.",
         img: "./micah_builds.png",
@@ -188,7 +197,7 @@ export const projects = [
         githubUrl: "https://github.com/Not-Micah/latest-portfolio"
     },
     {
-        index: 9,
+        index: 10,
         title: "Facial Recognition",
         description: "Built a face recognition tool with a Kivy interface. Improved the performance of an existing face recognition library.",
         img: "./face_recognition.png",
@@ -197,7 +206,7 @@ export const projects = [
         githubUrl: "https://github.com/Not-Micah/py-face-recognition"
     },
     {
-        index: 10,
+        index: 11,
         title: "Flappy Bird Clone",
         description: "Built a Flappy Bird clone using Java and the Graphics library as a final project for the 2024 Raikes Summer Program.",
         img: "./flappy_bird_clone.png",
@@ -233,8 +242,9 @@ export const archive: ArchiveItem[] = [
         type: "folder",
         title: "Grades",
         items: [
-        { type: "file", title: "IGCSE Grades", file: "" },
-        { type: "file", title: "AS-Level Grades", file: "" },
+        { type: "file", title: "IGCSE Grades", file: "https://drive.google.com/file/d/1nJK6WSWLWgPpC-ShXYs7sMWULa5B8lkn/view" },
+        { type: "file", title: "AS-Level Grades", file: "https://drive.google.com/file/d/1gKJ0JIFkBcMmvZMIQb6xkfbU5RkB-jtL/view" },
+        { type: "file", title: "SAT Report", file: "https://drive.google.com/file/d/1bv4Po27kogfg7L6550gKqGFp6sDm7P1k/view" }
         ],
     },
     {
@@ -244,7 +254,7 @@ export const archive: ArchiveItem[] = [
         {
             type: "file",
             title: "Highest Mark in Indonesia for IGCSE Global Perspectives",
-            file: "",
+            file: "https://drive.google.com/file/d/1mB7bh5zUEtK_ta1uw44kMNy_HjZjRbb5/view",
         },
         {
             type: "file",
@@ -272,10 +282,12 @@ export const archive: ArchiveItem[] = [
         title: "Organized Events",
         items: [
         { type: "file", title: "SES Prom 2023", file: "https://www.instagram.com/surabayaeuropeanschool/reel/Ct83j2Xh2hL/" },
-        { type: "file", title: "STEM Club NJIS", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C0d8m4ZB0_U/" },
+        { type: "file", title: "SES STEM Club NJIS", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C0d8m4ZB0_U/" },
+        { type: "file", title: "SES Halloween Parade 2023", file: "https://www.instagram.com/reel/CzXW8buBOdc/" },
         { type: "file", title: "SES Fun Day 2024", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C9U2HHKyGNz/" },
         { type: "file", title: "SES Science Fair 2024", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C2qt6y7hmmm/" },
-        { type: "file", title: "SES Science Fair 2025", file: "" },
+        { type: "file", title: "SES International Day 2024", file: "https://www.instagram.com/reel/C5qTSkOBLMz/" },
+        { type: "file", title: "SES Local Science Fair 2025", file: "" },
         ],
     },
     {
@@ -286,18 +298,18 @@ export const archive: ArchiveItem[] = [
             type: "folder",
             title: "Computer Science",
             items: [
-            { type: "file", title: "Python Course Completion", file: "" },
-            { type: "file", title: "HTML & CSS Course Completion", file: "" },
-            { type: "file", title: "NodeJS Course Completion", file: "" },
+            { type: "file", title: "Python Course Completion", file: "https://drive.google.com/file/d/10OxzMB7x_nEKyYH8yKNZF2el-jPjbr_v/view" },
+            { type: "file", title: "HTML & CSS Course Completion", file: "https://drive.google.com/file/d/1uALeeopxeM_C4q3JDZ_Kq1giRWZHDnQI/view" },
+            { type: "file", title: "NodeJS Course Completion", file: "https://drive.google.com/file/d/1hSAQnKFyMxT8FLDgKm5TnYsdmkZkqOka/view" },
             {
                 type: "file",
                 title: "Restoring Rainbows Internship Certificate",
-                file: "",
+                file: "https://drive.google.com/file/d/1tNAmcyEdU-xKXT2XYBvU9Pv1cnsgLjcd/view",
             },
             {
                 type: "file",
                 title: "Hearts for Hope Internship Certificate",
-                file: "",
+                file: "https://drive.google.com/file/d/1PfUCpSO-GJ77vPvUE7JDop8eWkhBp6P9/view",
             },
             ],
         },
@@ -307,21 +319,22 @@ export const archive: ArchiveItem[] = [
             items: [
             { type: "file", title: "UKMT Bronze Award", file: "" },
             { type: "file", title: "SEAMO Participation Award", file: "" },
-            { type: "file", title: "AMO Bronze Award", file: "" },
+            { type: "file", title: "AMO Bronze Award", file: "https://drive.google.com/file/d/1prXsFKgxnr7Gv5oprqe9G60nSw3AVoh0/view" },
             { type: "file", title: "WMI Participation Award", file: "" },
             { type: "file", title: "SASMO Participation Award", file: "" },
-            { type: "file", title: "MMWC Grandfinalist Placement", file: "" },
+            { type: "file", title: "MMWC School Topper", file: "https://drive.google.com/file/d/1Z1LuYsSmxly-6OaxglI7KbS_pOJk5rLC/view" },
+            { type: "file", title: "MMWC Grandfinalist Placement", file: "https://drive.google.com/file/d/1QANdOB5bJAlreYmyI0_FdHQzfLp2lny1/view" }
             ],
         },
         {
             type: "folder",
             title: "Swimming",
             items: [
-                { type: "file", title: "SIS Participation Award", file: "./roca_placement.jpg" },
-            { type: "file", title: "Rocca 2023 Breaststroke Placement", file: "./roca_placement.jpg" },
-            { type: "file", title: "SIS 2023 Freestyle Placement", file: "./roca_placement.jpg" },
-            { type: "file", title: "SIS 2024 Freestyle Placement", file: "./roca_placement.jpg" },
-            { type: "file", title: "SES Swim Gala 2024 Placement", file: "./roca_placement.jpg" }
+            { type: "file", title: "SIS Participation Award", file: "https://drive.google.com/file/d/1varsoGbQS3cltgsaVJ6dMsR53t9SwMNg/view" },
+            { type: "file", title: "Rocca 2023 Breaststroke Placement", file: "https://drive.google.com/file/d/109xTztARQaQ0Z-ojgtAFAn8RdAx1rGUe/view" },
+            { type: "file", title: "SIS 2023 Freestyle Placement", file: "https://drive.google.com/file/d/1WOfrariW60m4LjNqJAfSpzZFRK3KjpVJ/view" },
+            { type: "file", title: "SIS 2024 Freestyle Placement", file: "https://drive.google.com/file/d/1chColOg64vgk80rR0KAqhwRr_UkayZmW/view" },
+            { type: "file", title: "SES Swim Gala 2024 Placement", file: "https://drive.google.com/file/d/1WzqoI_7odqfT6TeU6JNtt2CRxKvEVYDR/view" }
             ],
         },
         { type: "file", title: "IAYP Bronze", file: "" },

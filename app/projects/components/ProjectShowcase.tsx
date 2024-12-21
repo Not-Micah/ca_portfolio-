@@ -90,7 +90,7 @@ const ProjectShowcase = () => {
         padding
       "
     >
-      <h3 className="dynamic-heading font-title mb-5">Projects</h3>
+      <h3 className="dynamic-heading font-title mb-5">Selected Projects</h3>
 
       <div
         className="
@@ -128,7 +128,7 @@ const ProjectShowcase = () => {
       </div>
 
       <ArrowText 
-      text="Any Many More Scripts" 
+      text="Any Many More" 
       link="https://github.com/Not-Micah" 
       className="mt-2" 
       />

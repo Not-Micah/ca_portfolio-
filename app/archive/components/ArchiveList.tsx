@@ -75,13 +75,6 @@ const ArchiveListContent = () => {
     router.push(`?path=${newPath}`);
   };
 
-  const handleFileClick = (file: string) => {
-    if (file) {
-      window.open(file, "_blank"); // Open the file directly as provided in item.file
-    }
-  };
-  
-
   return (
     <section className="max-w-max w-full mx-auto mt-[50px] mb-[120px] flex flex-col gap-y-6 padding">
       <h3 className="dynamic-heading font-title mb-5">Archive</h3>
@@ -98,8 +91,10 @@ const ArchiveListContent = () => {
               </button>
             ) : (
               <button
-                onClick={() => handleFileClick(item.file)}
-                className={twMerge(boxStyles, `dynamic-text text-left text-green-500 underline`)}
+                onClick={() => router.push(item.file)}
+                className={twMerge(boxStyles, `
+                  dynamic-text text-left underline 
+                  ${item.file === "" ? 'text-gray-400' : 'text-green-500'}`)}
               >
                 📄 {item.title}
               </button>
