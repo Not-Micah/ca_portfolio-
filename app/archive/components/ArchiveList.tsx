@@ -85,18 +85,19 @@ const ArchiveListContent = () => {
             {item.type === "folder" ? (
               <button
                 onClick={() => handleFolderClick(item.title)}
-                className={twMerge(boxStyles, `dynamic-text text-left text-blue-500 underline`)}
+                className={twMerge(boxStyles, `dynamic-text text-left text-blue-500`)}
               >
-                📂 {item.title}
+                📂 <span className="underline ml-2">{item.title}</span>
               </button>
             ) : (
               <button
                 onClick={() => router.push(item.file)}
                 className={twMerge(boxStyles, `
-                  dynamic-text text-left underline 
+                  dynamic-text text-left 
                   ${item.file === "" ? 'text-gray-400' : 'text-green-500'}`)}
               >
-                📄 {item.title}
+                {item?.star ? '⭐' : '📄'} 
+                <span className="underline ml-2">{item.title}</span>
               </button>
             )}
           </li>

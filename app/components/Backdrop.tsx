@@ -61,12 +61,12 @@ const Backdrop = () => {
         absolute -bottom-[50px] -right-[50px]
         ' />
 
-        <h3
+        {/* <h3
         className='
         absolute -bottom-[35px] -left-[20px]
         text-8xl font-accent uppercase opacity-20'>
           Mt. Dev
-        </h3>
+        </h3> */}
 
     </div>
   )
