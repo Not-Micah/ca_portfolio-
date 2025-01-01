@@ -8,7 +8,7 @@ const Home = () => {
     className='
     max-w-max w-full mx-auto
     max-h-[100vh] overflow-y-scroll no-scrollbar
-    mt-[50px] max-lg:mb-[100px]
+    mt-[50px] mb-[20px] max-lg:mb-[100px]
 
     flex flex-col gap-y-6
     padding'>

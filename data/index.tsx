@@ -83,7 +83,7 @@ export const experiences = [
         icon: <FaUserGraduate size={15} />,
         date: "2023-Present",
         description: (
-            <p>After completing my IGCSEs and exploring programming independently, I chose Computer Science as one of my A-Level subjects. My dedication led to achieving the <a className="underline" href="./blogs">highest mark in Indonesia for the AS-Level</a>. I am currently completing my A-Levels, which include Mathematics and Physics, further enhancing my analytical and technical skills.</p>
+            <p>After completing my IGCSEs and exploring programming independently, I chose Computer Science as one of my A-Level subjects. My dedication led to achieving the <a className="underline" href="https://micahtid.vercel.app/archive?path=Academics/Honors">highest mark in Indonesia for the AS-Level</a>. I am currently completing my A-Levels, which include Mathematics and Physics, further enhancing my analytical and technical skills.</p>
         )
     },
     {
@@ -103,7 +103,6 @@ export const experiences = [
         )
     },
 ];
-
 
 export const projects = [
     {
