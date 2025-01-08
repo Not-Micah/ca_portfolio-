@@ -301,7 +301,7 @@ export const archive: ArchiveItem[] = [
             },
             {
                 type: "folder",
-                title: "Competitive Mathematics",
+                title: "Mathematics",
                 items: [
                 { type: "file", title: "UKMT Bronze Award", file: "" },
                 { type: "file", title: "AMO Bronze Award", file: "https://drive.google.com/file/d/1prXsFKgxnr7Gv5oprqe9G60nSw3AVoh0/view" },
