@@ -265,7 +265,7 @@ export const archive: ArchiveItem[] = [
             type: "folder",
             title: "Inventions",
             items: [
-            { type: "file", title: "STEM Club's Maurice's Machine", file: "" },
+            { type: "file", title: "STEM Club's Maurice's Machine", file: "https://drive.google.com/drive/folders/1bCklmb_C8uMz7_FPmOMJswpEOwqBbYfg?usp=drive_link" },
             { type: "file", title: "Robotic's Club Mars Rover", file: "" },
             ],
         },
