@@ -192,7 +192,7 @@ export const projects = [
         description: "The previous iteration of my portfolio, built with React, TailwindCSS, and Next.js. A minimalist design showcasing my work and skills.",
         img: "./micah_builds.png",
         tools: ["TypeScript", "React", "TailwindCSS"],
-        mainUrl: "https://micah-builds.vercel.app/",
+        mainUrl: "",
         githubUrl: "https://github.com/Not-Micah/latest-portfolio"
     },
     {
@@ -295,8 +295,8 @@ export const archive: ArchiveItem[] = [
                 { type: "file", title: "NodeJS Course Completion", file: "https://drive.google.com/file/d/1hSAQnKFyMxT8FLDgKm5TnYsdmkZkqOka/view" },
                 { type: "file", title: "Restoring Rainbows Internship Certificate", file: "https://drive.google.com/file/d/1tNAmcyEdU-xKXT2XYBvU9Pv1cnsgLjcd/view" },
                 { type: "file", title: "Hearts for Hope Internship Certificate", file: "https://drive.google.com/file/d/1PfUCpSO-GJ77vPvUE7JDop8eWkhBp6P9/view" },
-                { type: "file", title: "Verlse Marketing Sample Week", file: "https://drive.google.com/file/d/17hRIQxzkJZu9gS9LaoptRcizIcN4SFJO/view" },
-                { type: "file", title: "Verbum Marketing Sample Week", file: "https://drive.google.com/file/d/1vyM21So6pQjt0aez41IkwAo74KJtz1oI/view" }
+                { type: "file", title: "Verlse Marketing Sample", file: "https://drive.google.com/file/d/17hRIQxzkJZu9gS9LaoptRcizIcN4SFJO/view" },
+                { type: "file", title: "Verbum Marketing Sample", file: "https://drive.google.com/file/d/1vyM21So6pQjt0aez41IkwAo74KJtz1oI/view" }
                 ],
             },
             {
