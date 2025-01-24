@@ -44,9 +44,9 @@ const ArchiveListPath = () => {
   };
   
 
-const boxStyles = `p-4 border-[1px] border-black/10 
-                    w-full rounded-lg backdrop-blur-[2px] 
-                    bg-white/30 hover:bg-white/70 
+const boxStyles = `p-4 border-2 border-black/10 
+                    w-full rounded-lg
+                    bg-white/[5%] hover:bg-white/[50%] backdrop-blur-[1px]
                     transition-all duration-200 ease-in-out 
                     shadow-sm
                     flex items-center gap-3`

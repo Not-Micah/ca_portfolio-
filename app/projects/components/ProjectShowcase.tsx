@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
       className="
         relative group
         w-full rounded-lg
-        bg-black/10 backdrop-blur-[1px]
+        bg-black/[5%] backdrop-blur-[1px]
         border-2 border-black/10
       "
     >
