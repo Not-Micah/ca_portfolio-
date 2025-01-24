@@ -192,7 +192,7 @@ export const projects = [
         description: "The previous iteration of my portfolio, built with React, TailwindCSS, and Next.js. A minimalist design showcasing my work and skills.",
         img: "./micah_builds.png",
         tools: ["TypeScript", "React", "TailwindCSS"],
-        mainUrl: "https://micah-builds.vercel.app/",
+        mainUrl: "",
         githubUrl: "https://github.com/Not-Micah/latest-portfolio"
     },
     {
@@ -234,76 +234,96 @@ items: ArchiveItem[];
 type ArchiveItem = ArchiveFolder | ArchiveFile;
   
 export const archive: ArchiveItem[] = [
-{
-    type: "folder",
-    title: "Academics",
-    items: [
     {
         type: "folder",
-        title: "Grades",
+        title: "Academics",
         items: [
-        { type: "file", star: true, title: "IGCSE Grades", file: "https://drive.google.com/file/d/1nJK6WSWLWgPpC-ShXYs7sMWULa5B8lkn/view" },
-        { type: "file", star: true, title: "AS-Level Grades", file: "https://drive.google.com/file/d/1gKJ0JIFkBcMmvZMIQb6xkfbU5RkB-jtL/view" },
-        { type: "file", title: "SAT Report", file: "https://drive.google.com/file/d/1bv4Po27kogfg7L6550gKqGFp6sDm7P1k/view" }
+        {
+            type: "folder",
+            title: "Grades",
+            items: [
+            { type: "file", title: "IGCSE Grades", file: "https://drive.google.com/file/d/1nJK6WSWLWgPpC-ShXYs7sMWULa5B8lkn/view" },
+            { type: "file", title: "AS-Level Grades", file: "https://drive.google.com/file/d/1gKJ0JIFkBcMmvZMIQb6xkfbU5RkB-jtL/view" },
+            { type: "file", title: "SAT Report", file: "https://drive.google.com/file/d/1bv4Po27kogfg7L6550gKqGFp6sDm7P1k/view" }
+            ],
+        },
+        {
+            type: "folder",
+            title: "Honors",
+            items: [
+            { type: "file", title: "Highest Mark in Indonesia for IGCSE Global Perspectives", file: "https://drive.google.com/file/d/1mB7bh5zUEtK_ta1uw44kMNy_HjZjRbb5/view" },
+            { type: "file", title: "Highest Mark in Indonesia for AS-Level Computer Science", file: "" },
+            ],
+        },
         ],
     },
     {
         type: "folder",
-        title: "Honors",
+        title: "Extracurriculars",
         items: [
-        { type: "file", star: true, title: "Highest Mark in Indonesia for IGCSE Global Perspectives", file: "https://drive.google.com/file/d/1mB7bh5zUEtK_ta1uw44kMNy_HjZjRbb5/view" },
-        { type: "file", star: true, title: "Highest Mark in Indonesia for AS-Level Computer Science", file: "" },
-        { type: "file", title: "French, English Literature and Physical Education Student of the Month", file: "" }
+        {
+            type: "folder",
+            title: "Inventions",
+            items: [
+            { type: "file", title: "STEM Club's Maurice's Machine", file: "https://drive.google.com/drive/folders/1bCklmb_C8uMz7_FPmOMJswpEOwqBbYfg?usp=drive_link" },
+            { type: "file", title: "Robotic's Club Mars Rover", file: "" },
+            ],
+        },
+        {
+            type: "folder",
+            title: "Organized Events",
+            items: [
+            { type: "file", title: "SES Prom 2023", file: "https://www.instagram.com/surabayaeuropeanschool/reel/Ct83j2Xh2hL/" },
+            { type: "file", title: "SES STEM Club NJIS", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C0d8m4ZB0_U/" },
+            { type: "file", title: "SES Halloween Parade 2023", file: "https://www.instagram.com/reel/CzXW8buBOdc/" },
+            { type: "file", title: "SES Fun Day 2024", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C9U2HHKyGNz/" },
+            { type: "file", title: "SES Science Fair 2024", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C2qt6y7hmmm/" },
+            { type: "file", title: "SES International Day 2024", file: "https://www.instagram.com/reel/C5qTSkOBLMz/" },
+            { type: "file", title: "SES Local Science Fair 2025", file: "" },
+            ],
+        },
+        {
+            type: "folder",
+            title: "Awards",
+            items: [
+            {
+                type: "folder",
+                title: "Computer Science",
+                items: [
+                { type: "file", title: "Python Course Completion", file: "https://drive.google.com/file/d/10OxzMB7x_nEKyYH8yKNZF2el-jPjbr_v/view" },
+                { type: "file", title: "HTML & CSS Course Completion", file: "https://drive.google.com/file/d/1uALeeopxeM_C4q3JDZ_Kq1giRWZHDnQI/view" },
+                { type: "file", title: "NodeJS Course Completion", file: "https://drive.google.com/file/d/1hSAQnKFyMxT8FLDgKm5TnYsdmkZkqOka/view" },
+                { type: "file", title: "Restoring Rainbows Internship Certificate", file: "https://drive.google.com/file/d/1tNAmcyEdU-xKXT2XYBvU9Pv1cnsgLjcd/view" },
+                { type: "file", title: "Hearts for Hope Internship Certificate", file: "https://drive.google.com/file/d/1PfUCpSO-GJ77vPvUE7JDop8eWkhBp6P9/view" },
+                { type: "file", title: "Verlse Marketing Sample", file: "https://drive.google.com/file/d/17hRIQxzkJZu9gS9LaoptRcizIcN4SFJO/view" },
+                { type: "file", title: "Verbum Marketing Sample", file: "https://drive.google.com/file/d/1vyM21So6pQjt0aez41IkwAo74KJtz1oI/view" }
+                ],
+            },
+            {
+                type: "folder",
+                title: "Mathematics",
+                items: [
+                { type: "file", title: "UKMT Bronze Award", file: "" },
+                { type: "file", title: "AMO Bronze Award", file: "https://drive.google.com/file/d/1prXsFKgxnr7Gv5oprqe9G60nSw3AVoh0/view" },
+                { type: "file", title: "MMWC Qualifiers", file: "https://drive.google.com/file/d/1eE--7dUrW8y3N8QTM4_pUHqMm73syt8A/view"},
+                { type: "file", title: "MMWC School Topper", file: "https://drive.google.com/file/d/1Z1LuYsSmxly-6OaxglI7KbS_pOJk5rLC/view" },
+                { type: "file", title: "MMWC Grandfinalist Placement", file: "https://drive.google.com/file/d/1QANdOB5bJAlreYmyI0_FdHQzfLp2lny1/view" }
+                ],
+            },
+            {
+                type: "folder",
+                title: "Swimming",
+                items: [
+                { type: "file", title: "SIS Participation Award", file: "https://drive.google.com/file/d/1varsoGbQS3cltgsaVJ6dMsR53t9SwMNg/view" },
+                { type: "file", title: "Rocca 2023 Breaststroke Placement", file: "https://drive.google.com/file/d/109xTztARQaQ0Z-ojgtAFAn8RdAx1rGUe/view" },
+                { type: "file", title: "SIS 2023 Freestyle Placement", file: "https://drive.google.com/file/d/1WOfrariW60m4LjNqJAfSpzZFRK3KjpVJ/view" },
+                { type: "file", title: "SIS 2024 Freestyle Placement", file: "https://drive.google.com/file/d/1chColOg64vgk80rR0KAqhwRr_UkayZmW/view" },
+                { type: "file", title: "SES Swim Gala 2024 Placement", file: "https://drive.google.com/file/d/1WzqoI_7odqfT6TeU6JNtt2CRxKvEVYDR/view" }
+                ],
+            },
+            { type: "file", title: "IAYP Bronze", file: "" },
+            ],
+        },
         ],
     },
-    ],
-},
-{
-    type: "folder",
-    title: "Extracurriculars",
-    items: [
-    {
-        type: "folder",
-        title: "Inventions",
-        items: [
-        { type: "file", title: "STEM Club's Maurice's Machine", file: "https://drive.google.com/drive/folders/1bCklmb_C8uMz7_FPmOMJswpEOwqBbYfg?usp=drive_link" },
-        { type: "file", title: "Robotic's Club Mars Rover", file: "https://drive.google.com/drive/folders/1AI35gBubdA2GVmqpVqwqDsl6At2fetFx?usp=drive_link" },
-        ],
-    },
-    {
-        type: "folder",
-        title: "Organized Events",
-        items: [
-        { type: "file", title: "SES Prom 2023", file: "https://www.instagram.com/surabayaeuropeanschool/reel/Ct83j2Xh2hL/" },
-        { type: "file", title: "SES STEM Club NJIS", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C0d8m4ZB0_U/" },
-        { type: "file", title: "SES Halloween Parade 2023", file: "https://www.instagram.com/reel/CzXW8buBOdc/" },
-        { type: "file", title: "SES Fun Day 2024", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C9U2HHKyGNz/" },
-        { type: "file", star: true, title: "SES Science Fair 2024", file: "https://www.instagram.com/surabayaeuropeanschool/reel/C2qt6y7hmmm/" },
-        { type: "file", star: true, title: "SES International Day 2024", file: "https://www.instagram.com/reel/C5qTSkOBLMz/" },
-        { type: "file", title: "SES Local Science Fair 2025", file: "" },
-        ],
-    },
-    {
-        type: "folder",
-        title: "Awards",
-        items: [
-        { type: "file", title: "Python Course Completion (CS)", file: "https://drive.google.com/file/d/10OxzMB7x_nEKyYH8yKNZF2el-jPjbr_v/view" },
-        { type: "file", title: "HTML & CSS Course Completion (CS)", file: "https://drive.google.com/file/d/1uALeeopxeM_C4q3JDZ_Kq1giRWZHDnQI/view" },
-        { type: "file", title: "NodeJS Course Completion (CS)", file: "https://drive.google.com/file/d/1hSAQnKFyMxT8FLDgKm5TnYsdmkZkqOka/view" },
-        { type: "file", star: true, title: "Restoring Rainbows Internship Certificate (CS)", file: "https://drive.google.com/file/d/1tNAmcyEdU-xKXT2XYBvU9Pv1cnsgLjcd/view" },
-        { type: "file", star: true, title: "Hearts for Hope Internship Certificate (CS)", file: "https://drive.google.com/file/d/1PfUCpSO-GJ77vPvUE7JDop8eWkhBp6P9/view" },
-        { type: "file", title: "UKMT Bronze Award (Math)", file: "" },
-        { type: "file", title: "AMO Bronze Award (Math)", file: "https://drive.google.com/file/d/1prXsFKgxnr7Gv5oprqe9G60nSw3AVoh0/view" },
-        { type: "file", title: "MMWC School Topper (Math)", file: "https://drive.google.com/file/d/1Z1LuYsSmxly-6OaxglI7KbS_pOJk5rLC/view" },
-        { type: "file", star: true, title: "MMWC Grandfinalist Placement (Math)", file: "https://drive.google.com/file/d/1QANdOB5bJAlreYmyI0_FdHQzfLp2lny1/view" },
-        { type: "file", title: "SIS Participation Award (Swimming)", file: "https://drive.google.com/file/d/1varsoGbQS3cltgsaVJ6dMsR53t9SwMNg/view" },
-        { type: "file", title: "Rocca 2023 Breaststroke Placement (Swimming)", file: "https://drive.google.com/file/d/109xTztARQaQ0Z-ojgtAFAn8RdAx1rGUe/view" },
-        { type: "file", title: "SIS 2023 Freestyle Placement (Swimming)", file: "https://drive.google.com/file/d/1WOfrariW60m4LjNqJAfSpzZFRK3KjpVJ/view" },
-        { type: "file", title: "SIS 2024 Freestyle Placement (Swimming)", file: "https://drive.google.com/file/d/1chColOg64vgk80rR0KAqhwRr_UkayZmW/view" },
-        { type: "file", title: "SES Swim Gala 2024 Placement (Swimming)", file: "https://drive.google.com/file/d/1WzqoI_7odqfT6TeU6JNtt2CRxKvEVYDR/view" },
-        { type: "file", title: "IAYP Bronze (Misc)", file: "" },
-        ],
-    },
-    ],
-},
-];
+    ];
