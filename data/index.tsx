@@ -114,7 +114,7 @@ export const projects = [
         tools: ["TypeScript", "React", "TailwindCSS", "Firebase"],
         mainUrl: "https://me2-register.vercel.app/",
         githubUrl: "https://github.com/Not-Micah/Me2",
-        briefUrl: "https://drive.google.com/file/d/1MAI8mueWLWEiWJAsbA4NPWdc627NHMFU/view"
+        briefUrl: "https://drive.google.com/file/d/1TvmCTTtzuJEzwDzQjDPOGDOS4N9gZrmz/view?usp=sharing"
     },
     {
         index: 1,
