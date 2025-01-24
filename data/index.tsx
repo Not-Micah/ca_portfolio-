@@ -7,6 +7,7 @@ export interface CardProps {
       tools?: string[];
       mainUrl?: string;
       githubUrl?: string;
+      briefUrl?: string;
     };
   }
 
@@ -112,7 +113,8 @@ export const projects = [
         img: "./me2.png",
         tools: ["TypeScript", "React", "TailwindCSS", "Firebase"],
         mainUrl: "https://me2-register.vercel.app/",
-        githubUrl: "https://github.com/Not-Micah/Me2"
+        githubUrl: "https://github.com/Not-Micah/Me2",
+        briefUrl: "https://drive.google.com/file/d/1MAI8mueWLWEiWJAsbA4NPWdc627NHMFU/view"
     },
     {
         index: 1,

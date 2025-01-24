@@ -1,7 +1,7 @@
 "use client";
 
 import useProjectModal from "@/hooks/useProjectModal";
-import { FaGithub, FaGlobeAsia } from "react-icons/fa";
+import { FaGithub, FaGlobeAsia, FaFileAlt } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
 
 const sharedHeaderStyles = "text-lg text-black/80 font-bold";
@@ -81,6 +81,17 @@ const ProjectModal = () => {
             </h3>
             <a href={card?.card.githubUrl} className={sharedLinkStyles}>
               {card?.card.githubUrl}
+            </a>
+          </div>
+        )}
+
+        {card?.card.briefUrl && (
+          <div className="mt-4 overflow-x-hidden">
+            <h3 className={twMerge(sharedHeaderStyles, sharedIconHeaderStyles)}>
+              <FaFileAlt className="text-black/50" /> Project Brief
+            </h3>
+            <a href={card?.card.briefUrl} className={sharedLinkStyles}>
+              {card?.card.briefUrl}
             </a>
           </div>
         )}
