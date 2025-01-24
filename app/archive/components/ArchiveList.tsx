@@ -4,6 +4,7 @@ import { archive } from "@/data";
 import { useSearchParams, useRouter } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 import { Suspense } from "react";
+import { FiFolder, FiFile, FiStar } from "react-icons/fi";
 
 const ArchiveListPath = () => {
     const searchParams = useSearchParams();
@@ -43,8 +44,12 @@ const ArchiveListPath = () => {
   };
   
 
-const boxStyles = `p-4 border-[1px] border-black/40
-                    w-full rounded-lg backdrop-blur-[1px] bg-black/[5%]`
+const boxStyles = `p-4 border-[1px] border-black/10 
+                    w-full rounded-lg backdrop-blur-[2px] 
+                    bg-white/30 hover:bg-white/70 
+                    transition-all duration-200 ease-in-out 
+                    shadow-sm
+                    flex items-center gap-3`
 
 const ArchiveListContent = () => {
   const searchParams = useSearchParams();
@@ -85,19 +90,23 @@ const ArchiveListContent = () => {
             {item.type === "folder" ? (
               <button
                 onClick={() => handleFolderClick(item.title)}
-                className={twMerge(boxStyles, `dynamic-text text-left text-blue-500`)}
+                className={twMerge(boxStyles, `dynamic-text text-left hover:text-blue-600 group`)}
               >
-                📂 <span className="underline ml-2">{item.title}</span>
+                <FiFolder className="w-5 h-5 text-blue-500 group-hover:text-blue-600" />
+                <span className="hover:underline">{item.title}</span>
               </button>
             ) : (
               <button
                 onClick={() => router.push(item.file)}
                 className={twMerge(boxStyles, `
-                  dynamic-text text-left 
-                  ${item.file === "" ? 'text-gray-400' : 'text-green-500'}`)}
+                  dynamic-text text-left group
+                  ${item.file === "" ? 'text-gray-400 cursor-not-allowed' : 'hover:text-green-600'}`)}
               >
-                {item?.star ? '⭐' : '📄'} 
-                <span className="underline ml-2">{item.title}</span>
+                {item?.star ? 
+                  <FiStar className="w-5 h-5 text-yellow-500 group-hover:text-yellow-600" /> : 
+                  <FiFile className="w-5 h-5 text-green-500 group-hover:text-green-600" />
+                }
+                <span className="hover:underline">{item.title}</span>
               </button>
             )}
           </li>
