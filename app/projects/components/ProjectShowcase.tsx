@@ -57,7 +57,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
             {card.description}
           </p>
 
-          <div className="flex items-center gap-x-2 flex-wrap">
+          <div className="flex items-center gap-x-2 gap-y-1 flex-wrap">
             {card.tools?.map((item, index) => (
               <div
                 key={index}
