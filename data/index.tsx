@@ -39,14 +39,6 @@ export const socialLinks = [
         href: "mailto:tidball.code@gmail.com"
     },
     {
-        icon: <FaDiscord size={25} />,
-        href: "https://discord.gg/RsX9EYacmM"
-    },
-    {
-        icon: <FaInstagram size={25} />,
-        href: "https://www.instagram.com/micahtid/"
-    },
-    {
         icon: <FaGithub size={25} />,
         href: "https://github.com/Not-Micah"
     },
@@ -254,7 +246,7 @@ export const archive: ArchiveItem[] = [
             title: "Honors",
             items: [
             { type: "file", title: "Highest Mark in Indonesia for IGCSE Global Perspectives", file: "https://drive.google.com/file/d/1mB7bh5zUEtK_ta1uw44kMNy_HjZjRbb5/view" },
-            { type: "file", title: "Highest Mark in Indonesia for AS-Level Computer Science", file: "" },
+            { type: "file", title: "Highest Mark in Indonesia for AS-Level Computer Science", file: "https://drive.google.com/file/d/1AM3Tlp01mgDhzthwtipNILsn8nqG2GSq/view" },
             ],
         },
         ],
